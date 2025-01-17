@@ -1,4 +1,35 @@
+
 .App {
   text-align: center;
   padding: 20px;
+
+/* App.css */
+.app-container {
+  background-color: #6d4c41;
+  color: white;
+  font-family: Arial, sans-serif;
+ 
 }
+
+.Cards {
+  min-height: 100vh; /* يجعل الارتفاع يغطي كامل الشاشة */
+  display: flex; /* استخدام flexbox لتوزيع العناصر */
+  flex-direction: row; /* الاتجاه الأفقي */
+  align-items: center; /* المحاذاة عموديًا في المركز */
+  justify-content: center; /* المحاذاة أفقيًا في المركز */
+  text-align: center; /* لتوسيط النصوص داخل العناصر */
+}
+
+
+
+.header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+
