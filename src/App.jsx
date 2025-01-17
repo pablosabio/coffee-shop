@@ -1,8 +1,12 @@
 /* eslint-disable react/prop-types */
 import "./App.css";
+import Header from "./Header";
 
 const App = () => {
   return (
+    <>
+  <Header/>
+
     <div className="app-container">
       <header className="header">
         <h1>Exploring Our Unique Collections</h1>
@@ -14,6 +18,8 @@ const App = () => {
       </div>
 
     </div>
+    </>
+
   );
 };
 
