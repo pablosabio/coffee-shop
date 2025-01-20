@@ -1,6 +1,13 @@
 /* eslint-disable react/prop-types */
 import "./App.css";
 import Header from "./Header";
+import Footer from "./Footer";
+import Shipping from "./context/Shipping";
+import PrivatePolicy from "./context/PrivatePolicy";
+import Terms from "./context/Terms";
+import Return from "./context/Return";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 
 const App = () => {
   return (
@@ -18,6 +25,17 @@ const App = () => {
       </div>
 
     </div>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/shipping" element={<Shipping />} />
+          <Route path="/privacy-policy" element={<PrivatePolicy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/return" element={<Return />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
     </>
 
   );
