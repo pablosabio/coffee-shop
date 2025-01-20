@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./App.css";
 import Header from "./Header";
+import Blog from "./Blog";
 
 const App = () => {
   return (
@@ -16,7 +17,7 @@ const App = () => {
       <Card image="https://150698241.v2.pressablecdn.com/coffee-store/wp-content/uploads/sites/341/2024/11/ct1-1.png" title="Beautiful Sunset" />
       <Card image="https://150698241.v2.pressablecdn.com/coffee-store/wp-content/uploads/sites/341/2024/11/ct1-1.png" title="Beautiful Sunset" />
       </div>
-
+  <Blog></Blog>
     </div>
     </>
 
