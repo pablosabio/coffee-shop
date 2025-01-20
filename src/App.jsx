@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
 import "./App.css";
 import Header from "./Header";
+import Blog from "./Blog";
 import Footer from "./Footer";
 import Shipping from "./context/Shipping";
 import PrivatePolicy from "./context/PrivatePolicy";
 import Terms from "./context/Terms";
 import Return from "./context/Return";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
 
 const App = () => {
   return (
@@ -23,7 +23,7 @@ const App = () => {
       <Card image="https://150698241.v2.pressablecdn.com/coffee-store/wp-content/uploads/sites/341/2024/11/ct1-1.png" title="Beautiful Sunset" />
       <Card image="https://150698241.v2.pressablecdn.com/coffee-store/wp-content/uploads/sites/341/2024/11/ct1-1.png" title="Beautiful Sunset" />
       </div>
-
+  <Blog></Blog>
     </div>
     <Router>
       <div>
