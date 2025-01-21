@@ -9,6 +9,8 @@ import Terms from "./context/Terms";
 import Return from "./context/Return";
 import NewCollection from "./components/NewCollection";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Section_Exploring from "./Sections/Section_Exploring";
+import Next_Exploring_Our_Unique from "./Sections/Next_Exploring_Our_Unique";
 
 const App = () => {
   return (
@@ -17,14 +19,6 @@ const App = () => {
   <Div1/>
 
     <div className="app-container">
-      <header className="header">
-        <h1>Exploring Our Unique Collections</h1>
-      </header>
-      <div className="Cards">
-      <Card image="https://150698241.v2.pressablecdn.com/coffee-store/wp-content/uploads/sites/341/2024/11/ct1-1.png" title="Beautiful Sunset" />
-      <Card image="https://150698241.v2.pressablecdn.com/coffee-store/wp-content/uploads/sites/341/2024/11/ct1-1.png" title="Beautiful Sunset" />
-      <Card image="https://150698241.v2.pressablecdn.com/coffee-store/wp-content/uploads/sites/341/2024/11/ct1-1.png" title="Beautiful Sunset" />
-      </div>
       <Section_Exploring/>
       <Next_Exploring_Our_Unique/>
   <Blog></Blog>
