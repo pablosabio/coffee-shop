@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./App.css";
 import Header from "./Header";
+import Div1 from "./Div1";
 import Blog from "./Blog";
 import Footer from "./Footer";
 import Shipping from "./context/Shipping";
@@ -13,6 +14,7 @@ const App = () => {
   return (
     <>
   <Header/>
+  <Div1/>
 
     <div className="app-container">
       <header className="header">
