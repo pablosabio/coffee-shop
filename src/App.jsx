@@ -8,6 +8,7 @@ import Shipping from "./context/Shipping";
 import PrivatePolicy from "./context/PrivatePolicy";
 import Terms from "./context/Terms";
 import Return from "./context/Return";
+import NewCollection from "./components/NewCollection";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
@@ -34,10 +35,13 @@ const App = () => {
           <Route path="/privacy-policy" element={<PrivatePolicy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/return" element={<Return />} />
+          <Route path="/" element={<NewCollection />} />
         </Routes>
         <Footer />
       </div>
     </Router>
+    
+    
     </>
 
   );

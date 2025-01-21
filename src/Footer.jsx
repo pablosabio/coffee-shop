@@ -54,7 +54,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer style={{ backgroundColor: "#4E342E", padding: "20px 40px", color:"white", height: "80rem" }}>
+    <footer style={{ backgroundColor: "#4E342E", padding: "20px 40px", color:"white", height: "60rem" }}>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         {/* About Us Section */}
         <div style={{ flex: "1" }}>
