@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import "./App.css";
 import Header from "./Header";
 import Div1 from "./Div1";
@@ -26,6 +25,8 @@ const App = () => {
       <Card image="https://150698241.v2.pressablecdn.com/coffee-store/wp-content/uploads/sites/341/2024/11/ct1-1.png" title="Beautiful Sunset" />
       <Card image="https://150698241.v2.pressablecdn.com/coffee-store/wp-content/uploads/sites/341/2024/11/ct1-1.png" title="Beautiful Sunset" />
       </div>
+      <Section_Exploring/>
+      <Next_Exploring_Our_Unique/>
   <Blog></Blog>
     </div>
     <Router>
@@ -49,15 +50,3 @@ const App = () => {
 
 export default App;
 
-function Card({image,title}) {
-    return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg">
-      <img className="w-full" src={image} />
-      <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">{title}</div>
-      </div>
-      <div className="px-6 pt-4 pb-2">
-      </div>
-    </div>
-  );
-}
