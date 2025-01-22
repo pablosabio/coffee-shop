@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function NewCollection() {
   const pageStyle = {
@@ -63,6 +63,28 @@ function NewCollection() {
     e.target.style.transform = 'scale(1)';
   };
 
+  const [readMore, setReadMore] = useState([false, false, false]);
+
+  const handleToggle = (index) => {
+    setReadMore((prev) => {
+      const newState = [...prev];
+      newState[index] = !newState[index];
+      return newState;
+    });
+  };
+
+  const descriptions = [
+    "Bistro Reserve is a premium coffee blend known for its rich aroma and full-bodied flavor, crafted from the finest beans... Click to read more.",
+    "Nitro Frost View delivers a unique cold brew experience with a smooth finish and bold flavors infused with nitrogen... Click to read more.",
+    "Vanilla Cloudburst Coffee offers a delightful balance of smooth vanilla notes and a velvety texture in every sip... Click to read more.",
+  ];
+
+  const fullDescriptions = [
+    "Bistro Reserve is a premium coffee blend known for its rich aroma and full-bodied flavor, crafted from the finest beans in select regions.",
+    "Nitro Frost View delivers a unique cold brew experience with a smooth finish and bold flavors infused with nitrogen for a velvety texture.",
+    "Vanilla Cloudburst Coffee offers a delightful balance of smooth vanilla notes, a velvety texture, and a satisfying aroma to elevate your coffee experience.",
+  ];
+
   return (
     <div style={pageStyle}>
       <h1>Our New Collection</h1>
@@ -76,6 +98,9 @@ function NewCollection() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           />
+          <p onClick={() => handleToggle(0)} style={{color: "brown"}}>
+            {readMore[0] ? fullDescriptions[0] : descriptions[0]}
+          </p>
         </div>
         <div style={cardMiddleStyle}>
           <h2 style={{color: "brown"}}>Nitro Fost Brew</h2>
@@ -86,6 +111,9 @@ function NewCollection() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           />
+          <p onClick={() => handleToggle(1)} style={{color:"brown"}}>
+            {readMore[1] ? fullDescriptions[1] : descriptions[1]}
+          </p>
         </div>
         <div style={cardRightStyle}>
           <h2 style={{color: "brown"}}>Vanila Cloudburst</h2>
@@ -96,6 +124,9 @@ function NewCollection() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           />
+          <p onClick={() => handleToggle(2)} style={{color:"brown"}}>
+            {readMore[2] ? fullDescriptions[2] : descriptions[2]}
+          </p>
         </div>
       </div>
     </div>
